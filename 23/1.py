@@ -1,11 +1,14 @@
-import sys
+import timeit
 
 
 def main():
-    with open('example.txt') as f:
-        lines = f.readlines()
+    start = timeit.default_timer()
+    with open('example.txt') as f: lines = f.readlines()
 
+    # Code here
 
+    stop = timeit.default_timer()
+    print('Time: ', stop - start)
 
 
 if __name__ == '__main__':
