@@ -25,7 +25,7 @@ def main():
 
     print(last_number)
     stop = timeit.default_timer()
-    print('Time: ', stop - start)
+    print("Time : %.4f ms" % (1000 * (stop - start)))
 
 
 if __name__ == '__main__':
