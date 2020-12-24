@@ -1,9 +1,10 @@
 import timeit
-
+import os
 
 def main():
     start = timeit.default_timer()
-    with open('example.txt') as f: lines = f.readlines()
+    cwd = os.path.dirname(os.path.realpath(__file__)
+    with open(cwd + '/example.txt') as f: lines = f.readlines()
 
     # Code here
 
